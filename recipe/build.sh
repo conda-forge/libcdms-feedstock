@@ -3,6 +3,12 @@ export CXXLAGS="${CFLAGS} ${CXXLAGS}"
 export CPPFLAGS="-I${PREFIX}/include ${CPPPFLAGS}"
 export LDFLAGS="-L${PREFIX}/lib ${LDFLAGS}"
 
+if [ $(uname) == "Linux" ];then
+    if [ ! -f ${PREFIX}/lib/libgfortran.so ]; then
+        ln -s ${PREFIX}/lib/libgfortran.so.3.0.0 ${PREFIX}/lib/libgfortran.so
+    fi
+fi
+
 ./configure \
     --enable-dap= \
     --enable-drs \
