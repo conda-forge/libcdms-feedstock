@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - hdf5 1.8.18|1.8.18.*
+    - hdf5 1.10.1
     - libnetcdf 4.4.*
     - jasper
     - g2clib
@@ -23,9 +23,10 @@ requirements:
     - libtiff 4.0.*
     - jpeg 9*
     - libdrs
+    - libgfortran
     - toolchain  # [osx]
   run:
-    - hdf5 1.8.18|1.8.18.*
+    - hdf5 1.10.1
     - libnetcdf 4.4.*
     - jasper
     - g2clib
@@ -33,6 +34,7 @@ requirements:
     - libtiff 4.0.*
     - jpeg 9*
     - libdrs
+    - libgfortran
 
 test:
   commands:
