@@ -7,11 +7,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/UV-CDAT/libcdms/archive/master.tar.gz
-  sha256: 46613f202babe43d8beb07e8ff65c114afeeb36093876e36c7fcaaf306984990
+  url: https://github.com/UV-CDAT/libcdms/archive/v3.0.tar.gz
+  sha256: 18131119b862c744224669dbd9d9fc292f34ef0c6ec5d97a39e179962fc2e3df
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win] 
 
 requirements:
