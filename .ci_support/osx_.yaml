@@ -2,10 +2,16 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 c_compiler:
 - clang
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
 fortran_compiler:
 - gfortran
 hdf5:
-- 1.10.2
+- 1.10.3
+jasper:
+- 1.900.1
 jpeg:
 - '9'
 libnetcdf:
@@ -21,6 +27,8 @@ macos_min_version:
 pin_run_as_build:
   hdf5:
     max_pin: x.x.x
+  jasper:
+    max_pin: x
   jpeg:
     max_pin: x
   libnetcdf:
