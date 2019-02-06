@@ -1,5 +1,5 @@
 {% set name = "libcdms" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: 887107ef1a48e057065ee1c01e0ae1ea1b430e8ce9e2d722686b1e82e9dbb473
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win]
 
 requirements:
