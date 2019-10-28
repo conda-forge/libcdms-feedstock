@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '4'
+- '9'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -19,7 +19,7 @@ jasper:
 jpeg:
 - '9'
 libnetcdf:
-- 4.6.2
+- 4.7.1
 libpng:
 - '1.6'
 libtiff:
