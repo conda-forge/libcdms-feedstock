@@ -21,7 +21,7 @@ jasper:
 jpeg:
 - '9'
 libnetcdf:
-- 4.8.0
+- 4.8.1
 libpng:
 - '1.6'
 libtiff:
