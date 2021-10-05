@@ -1,0 +1,15 @@
+diff -ruN libcdms-3.1.2/src/cdunif/cdunifint.c libcdms-3.1.2-patch/src/cdunif/cdunifint.c
+--- libcdms-3.1.2/src/cdunif/cdunifint.c	2019-02-09 04:36:11.000000000 +0100
++++ libcdms-3.1.2-patch/src/cdunif/cdunifint.c	2021-07-20 15:09:14.208319556 +0200
+@@ -376,7 +376,10 @@
+ #endif
+ /*			printf("magic is: magic, NC5, NC4, NC64, NC: %i, %i, %i, %i\n",magic,NETCDF5_MAGIC_COOKIE, NETCDF4_MAGIC_COOKIE, NETCDF4_64BIT_MAGIC_COOKIE, NETCDF_MAGIC_COOKIE );
+ 			printf("hex: %x, %x \n",magic, NETCDF5_MAGIC_COOKIE); */
+-			if((magic==NETCDF_MAGIC_COOKIE) || (magic == NETCDF5_MAGIC_COOKIE) ||
++			if((magic==NETCDF_MAGIC_COOKIE) ||
++#if defined(__x86_64__)
++					(magic == NETCDF5_MAGIC_COOKIE) ||
++#endif
+ 			        (magic == NETCDF4_MAGIC_COOKIE) ||
+ 			        (magic == NETCDF4_64BIT_MAGIC_COOKIE)||
+ 			        (magic == NETCDF4_64BIT_MAGIC_COOKIE2)){

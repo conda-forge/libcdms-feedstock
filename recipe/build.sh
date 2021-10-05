@@ -1,4 +1,8 @@
-export CFLAGS="-Wall -g -m64 -pipe -O2  -fPIC ${CFLAGS}"
+export CFLAGS="-Wall -g -pipe -O2  -fPIC ${CFLAGS}"
+if [[ "$target_platform" != "linux-aarch64" ]]; then
+  # probably not necessary anywhere, but makes aarch64 unhappy for sure
+  export CFLAGS="-m64 ${CFLAGS}"
+fi
 export CXXLAGS="${CFLAGS} ${CXXLAGS}"
 export CPPFLAGS="-I${PREFIX}/include ${CPPPFLAGS}"
 export LDFLAGS="-L${PREFIX}/lib ${LDFLAGS}"
@@ -26,7 +30,7 @@ export LDSHARED="$CC -shared -pthread" ;
     --with-jasperlib=${PREFIX}/lib \
     --with-grib2inc=${PREFIX}/include \
     --enable-grib2 \
-    --prefix=${PREFIX}
+    --prefix=${PREFIX} || (cat config.log && exit 1)
 
 make 
 make libinstall
