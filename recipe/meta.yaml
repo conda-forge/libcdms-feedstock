@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - make
   host:
     - hdf5
     - hdf5 * nompi_*
