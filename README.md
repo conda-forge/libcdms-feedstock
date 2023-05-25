@@ -1,11 +1,11 @@
-About libcdms
-=============
+About libcdms-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libcdms-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/CDAT/libcdms
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libcdms-feedstock/blob/main/LICENSE.txt)
 
 Summary: Climate Data Management System library
 
