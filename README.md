@@ -180,4 +180,5 @@ Feedstock Maintainers
 * [@doutriaux1](https://github.com/doutriaux1/)
 * [@downiec](https://github.com/downiec/)
 * [@xylar](https://github.com/xylar/)
+* [@zklaus](https://github.com/zklaus/)
 
