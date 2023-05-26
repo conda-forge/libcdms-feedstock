@@ -1,6 +1,6 @@
 {% set name = "libcdms" %}
 {% set version = "3.1.2" %}
-{% set build = 120 %}
+{% set build = 121 %}
 
 package:
   name: {{ name|lower }}
@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/CDAT/libcdms/archive/v{{ version }}.tar.gz
   sha256: 2010ef24f8f8c14a6f997206ec342e6fed9703b81f8641d70bebc992a3855e8c
+  patches:
+    - g2c.patch
 
 build:
   number: {{ build }}
@@ -61,3 +63,4 @@ extra:
     - doutriaux1
     - downiec
     - xylar
+    - zklaus
