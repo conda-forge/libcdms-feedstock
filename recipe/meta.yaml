@@ -32,6 +32,7 @@ requirements:
     - libtiff
     - libjpeg-turbo
     - libdrs
+    - zlib
   run:
     - hdf5
     - libnetcdf
