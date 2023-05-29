@@ -1,6 +1,6 @@
 {% set name = "libcdms" %}
 {% set version = "3.1.2" %}
-{% set build = 121 %}
+{% set build = 122 %}
 
 package:
   name: {{ name|lower }}
@@ -30,8 +30,9 @@ requirements:
     - g2clib
     - libpng
     - libtiff
-    - jpeg
+    - libjpeg-turbo
     - libdrs
+    - zlib
   run:
     - hdf5
     - libnetcdf
@@ -39,7 +40,7 @@ requirements:
     - g2clib
     - libpng
     - libtiff
-    - jpeg
+    - libjpeg-turbo
     - libdrs
 
 test:
