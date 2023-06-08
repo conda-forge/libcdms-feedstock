@@ -31,7 +31,6 @@ requirements:
     - libpng
     - libtiff
     - libjpeg-turbo
-    - libdrs
     - zlib
   run:
     - hdf5
@@ -41,7 +40,6 @@ requirements:
     - libpng
     - libtiff
     - libjpeg-turbo
-    - libdrs
 
 test:
   commands:
