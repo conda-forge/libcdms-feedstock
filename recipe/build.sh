@@ -6,10 +6,7 @@ export LDSHARED="$CC -shared -pthread" ;
 
 ./configure \
     --enable-dap= \
-    --enable-drs \
-    --with-drslib=${PREFIX}/lib \
-    --with-drsinc=${PREFIX}/include \
-    --with-drsincf=${PREFIX}/include \
+    --enable-drs=no \
     --enable-hdf=no \
     --enable-pp=yes \
     --enable-ql=no \
