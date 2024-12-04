@@ -1,6 +1,6 @@
 {% set name = "libcdms" %}
 {% set version = "3.1.2" %}
-{% set build = 130 %}
+{% set build = 131 %}
 
 package:
   name: {{ name|lower }}
